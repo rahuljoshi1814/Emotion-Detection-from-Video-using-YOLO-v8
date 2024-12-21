@@ -1,0 +1,5 @@
+path: C:/Users/Rahul/emotion_detection_using_yolov8/datasets
+train: C:/Users/Rahul/emotion_detection_using_yolov8/datasets/wider_face/WIDER_train/images
+val: C:/Users/Rahul/emotion_detection_using_yolov8/datasets/wider_face/WIDER_val/images
+nc: 1  # Number of classes (face)
+names: ['face']
