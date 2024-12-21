@@ -1,0 +1,10 @@
+## create a folder "wider_face" :
+download the da by using this link : http://shuoyang1213.me/WIDERFACE/
+Extract the Files: 
+- unzip WIDER_train.zip
+- unzip WIDER_val.zip
+- unzip wider_face_split.zip
+extract all these 3 files and put them into folder wider_face
+
+## create a folder "fer2013"
+- download the datasets by using link : "https://www.kaggle.com/datasets/msambare/fer2013"
