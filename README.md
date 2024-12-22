@@ -9,18 +9,16 @@ This project uses YOLOv8 for face detection based on the wider_face datasets and
 ## Requirements
 ### System Dependencies
 - Python 3.8+
-### Python Libraries
-- To install all the necessary dependencies for this project, create a virtual environment and install from the "requirements.txt" file:
-#### Create a virtual environment
-- python -m venv venv
-- venv\Scripts\activate     # For Windows
-#### Install dependencies
-- pip install -r requirements.txt
 
 ## Setup
-1. Clone the repository :
+1. #### Clone the repository :
 - git clone https://github.com/rahuljoshi1814/Emotion-Detection-from-Video-using-YOLO-v8.git
 - cd /Emotion-Detection-from-Video-using-YOLO-v8
+2. #### Create a virtual environment :
+- python -m venv venv
+- venv\Scripts\activate     # For Windows
+3. #### Python Libraries :
+- To install all the necessary dependencies for this project, create a virtual environment and install from the "requirements.txt" file.
 
 ## Model Training
 1. Dataset Preparation
