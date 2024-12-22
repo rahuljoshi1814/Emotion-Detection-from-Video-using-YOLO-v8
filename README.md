@@ -56,7 +56,7 @@ If you are running this locally or want to run the server, use the following dep
 #### Local Development
 - You can run the app locally using Uvicorn: "uvicorn fast_api_app:app --reload"
 #### Real-Time Video Processing
-To process a live video from your webcam or a recorded video file, run the following Python script: web_app.py
+To process a live video from your webcam or a recorded video file, run the following Python script:"python web_app.py"
 This script will detect faces and emotions in real-time using your webcam.
 
 ## AWS Deployment
