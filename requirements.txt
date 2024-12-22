@@ -1,0 +1,15 @@
+tensorflow
+torchvision
+numpy
+pandas
+onnx-tf
+uvicorn
+ultralytics
+awscli
+awsebcli
+opencv-python
+torch
+torchvision
+Pillow
+requests
+fastapi
