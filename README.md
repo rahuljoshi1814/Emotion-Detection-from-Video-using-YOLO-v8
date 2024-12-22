@@ -21,16 +21,24 @@ This project uses YOLOv8 for face detection based on the wider_face datasets and
 - To install all the necessary dependencies for this project, create a virtual environment and install from the "requirements.txt" file.
 
 ## Model Training
-1. Dataset Preparation
-- Face Detection Dataset: Use the WIDER FACE dataset for fine-tuning YOLOv8 on face detection. Follow the instructions in the "datasets" script to convert annotations to YOLO format.
-- Emotion Classification Dataset: Use the fer2013 dataset, which is already split into train and test directories, each containing labeled emotions such as happy, sad, angry, etc.
-2. YOLOv8 Fine-tuning
+### Dataset Preparation
+1. Face Detection Dataset:
+- create a folder "wider_face" in the datasets directory, download the data by using this link : http://shuoyang1213.me/WIDERFACE/ 
+- Extract the Files: 
+  - unzip WIDER_train.zip
+  - unzip WIDER_val.zip
+  - unzip wider_face_split.zip, extract all these 3 files and put them into folder wider_face and then Use the WIDER FACE dataset for fine-tuning YOLOv8 on face detection. Follow the instructions in the "datasets" script to convert annotations to YOLO format.
+  - now in the folder "wider_face_data_preprocess" Run scripts WIDER_train.py (scripts for WIDER_train data to YOLO format - like to create the labels) and after that in that same folder Run the WIDER_val.py script (for WIDER_val).
+2. Emotion Classification Dataset: create a folder "fer2013" in the datasets directory, download the datasets by using link : "https://www.kaggle.com/datasets/msambare/fer2013"
+- Extract the files (test and train) and then put them into fer2013 folder. Use the fer2013 dataset, which is already split into train and test directories, each containing labeled emotions such as happy, sad, angry, etc.
+### YOLOv8 Fine-tuning
 To fine-tune YOLOv8 for face detection
-Load YOLOv8 and fine-tune on the WIDER FACE dataset.
-after that use these command on terminal
+Load YOLOv8 and fine-tune on the WIDER FACE dataset. for this run this command on terminal :
 - To train: - "yolo task=detect mode=train model=yolov8n.pt data=wider_face.yaml epochs=50 imgsz=640"
-- To test : - "yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source=path_to_test_images_or_video"
-- Train the emotion classification model on the FER-2013 dataset.
+- To test : - "yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source=path_to_test_images_or_video" , 
+after this in the folder "integration_pipeline" Run the script : face_detection.py (to capture faces testing in web_cam )
+### emotion_recognition_model
+- Train the emotion classification model on the FER-2013 dataset. for this in emotion_recognition folder run the script : "emotion_recognition.py"
 - For detailed instructions on how to fine-tune the models, refer to the specific code for training the YOLO model and the emotion classifier in the repository.
 
 ## API Deployment
