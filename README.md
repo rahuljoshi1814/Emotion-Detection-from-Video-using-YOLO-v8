@@ -22,7 +22,7 @@ This project uses YOLOv8 for face detection based on the wider_face datasets and
 
 ## Model Training
 1. Dataset Preparation
-- Face Detection Dataset: Use the WIDER FACE dataset for fine-tuning YOLOv8 on face detection. Follow the instructions in the script to convert annotations to YOLO format.
+- Face Detection Dataset: Use the WIDER FACE dataset for fine-tuning YOLOv8 on face detection. Follow the instructions in the "datasets" script to convert annotations to YOLO format.
 - Emotion Classification Dataset: Use the fer2013 dataset, which is already split into train and test directories, each containing labeled emotions such as happy, sad, angry, etc.
 2. YOLOv8 Fine-tuning
 To fine-tune YOLOv8 for face detection
