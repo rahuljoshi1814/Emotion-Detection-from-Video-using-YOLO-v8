@@ -40,7 +40,7 @@ after this in the folder "integration_pipeline" Run the script : face_detection.
 ### emotion_recognition_model
 - Train the emotion classification model on the FER-2013 dataset. for this in emotion_recognition folder run the script : "emotion_recognition.py"
 - For detailed instructions on how to fine-tune the models, refer to the specific code for training the YOLO model and the emotion classifier in the repository.
-
+- run web_app.py to live emotion-recognition or run "integration.py" in integration_pipelines.
 ## API Deployment
 The application provides a REST API using FastAPI for detecting emotions from videos. The following steps guide you to deploy the app to AWS Elastic Beanstalk.
 
@@ -55,12 +55,9 @@ If you are running this locally or want to run the server, use the following dep
 ## Running the Project
 #### Local Development
 - You can run the app locally using Uvicorn:
-- uvicorn app:app --reload
-Real-Time Video Processing
-To process a live video from your webcam or a recorded video file, run the following Python script:
+- uvicorn fast_api_app:app --reload
 #### Real-Time Video Processing
-To process a live video from your webcam or a recorded video file, run the following Python script:
-- python emotion_detection.py
+To process a live video from your webcam or a recorded video file, run the following Python script: web_app.py
 This script will detect faces and emotions in real-time using your webcam.
 
 ## AWS Deployment
