@@ -32,8 +32,8 @@ Load YOLOv8 and fine-tune on the WIDER FACE dataset.
 after that use these command on terminal
 - To train: - "yolo task=detect mode=train model=yolov8n.pt data=wider_face.yaml epochs=50 imgsz=640"
 - To test : - "yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source=path_to_test_images_or_video"
-Train the emotion classification model on the FER-2013 dataset.
-For detailed instructions on how to fine-tune the models, refer to the specific code for training the YOLO model and the emotion classifier in the repository.
+- Train the emotion classification model on the FER-2013 dataset.
+- For detailed instructions on how to fine-tune the models, refer to the specific code for training the YOLO model and the emotion classifier in the repository.
 
 ## API Deployment
 The application provides a REST API using FastAPI for detecting emotions from videos. The following steps guide you to deploy the app to AWS Elastic Beanstalk.
